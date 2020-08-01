@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+            }
+            .hidden {
+                display: none !important;
+            }
+
+            h1 {
+                color: greenyellow;
+                font-size: 80px;
+            }
+
+            button {
+                background-color: blue;
+                color: teal;
+                font-size: 70px;
+            }
+            .winner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+                height: 110vh;
+                width: 100vw;
+            }
+
+            .restart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+                height: 70vh;
+                width: 100vw;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        
+        <nav>
+            <div class="winner hidden">
+                <h1>!!!You Win!!!</h1>
+            </div>
+            <div class="restart hidden">
+                <button onClick="window.location.reload();">Play Again</button>
+            </div>
+        </nav>
+        
+        <script src="index.js"></script>
+    </body>
+    
+</html>
